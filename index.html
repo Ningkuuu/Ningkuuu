@@ -3,69 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Joshua F. Ortega - Resume</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .header div {
+            flex-grow: 1;
+        }
+
+        h1 {
+            font-size: 32px;
+            text-transform: uppercase;
+            margin: 0;
+            color: #333;
+        }
+
+        .contact-info {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: 1px solid #000;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .personal-info {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .personal-info div {
+            width: 48%;
+        }
+
+        .info-label {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .two-columns {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .two-columns div {
+            width: 48%;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .education-section {
+            text-align: center;
+        }
+
+        .strength-skills {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .strength-skills div {
+            width: 48%;
+        }
+    </style>
 </head>
 <body>
+
     <div class="container">
-        <header class="header">
-            <img src="profile.jpg" alt="Joshua Ortega">
+        <!-- Header with image and name -->
+        <div class="header">
+            <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t39.30808-6/334078918_422876440044314_5351705445480967913_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEsxCZBpdkYwADgDpY-6ZkbBY3Nmpm_Fc8Fjc2amb8Vz_8vSxziOw7BgS7sgv851WsjE0THNQFdZYiah14lF1as&_nc_ohc=xYJojKfuPcYQ7kNvgHa617K&_nc_ht=scontent.fmnl17-3.fna&oh=00_AYC7BnDp9u_j7XVuKx_6c9znWnZC3OLyN8R5WsSzCNbQ5w&oe=66EF7E97" alt="Joshua Ortega">
             <div>
                 <h1>Joshua F. Ortega</h1>
-                <p class="contact-info">65 Ausmolo Comp. Ilaya St. Buting Pasig City</p>
-                <p class="contact-info">Email: ortegajoshua1771@gmail.com | Contact: 0994 586 2856 (DITO)</p>
+                <div class="contact-info">
+                    <p>65 Ausmolo Comp. Ilaya St. Buting Pasig City</p>
+                    <p>Email: ortegajoshua1771@gmail.com | Contact: 0994 586 2856 (DITO)</p>
+                </div>
             </div>
-        </header>
-        
-        <section class="section">
+        </div>
+
+        <hr>
+
+        <!-- Objective -->
+        <div class="section">
             <h2>Objective</h2>
-            <p>
-                Seeking a challenging role to utilize my talents and skills while growing personally and professionally.
+            <p style="text-align: center;">
+                I am looking for a challenging job where I can utilize my talent and skills. 
+                I aim to work well with people, <br>allowing me to grow personally and professionally.
             </p>
-        </section>
+        </div>
+        
 
-        <section class="section">
+        <hr>
+
+        <!-- Personal Information -->
+        <div class="section">
             <h2>Personal Information</h2>
-            <div class="info-grid">
-                <p><strong>Nickname:</strong> Josh/Shua</p>
-                <p><strong>Birthdate:</strong> February 28, 2004</p>
-                <p><strong>Age:</strong> 20 years old</p>
-                <p><strong>Gender:</strong> Male</p>
-                <p><strong>Citizenship:</strong> Filipino</p>
-                <p><strong>Religion:</strong> Roman Catholic</p>
+            <div class="personal-info">
+                <div>
+                    <p><span class="info-label">Nickname:</span> Josh/Shua</p>
+                    <p><span class="info-label">Date of Birth:</span> February 28, 2004</p>
+                    <p><span class="info-label">Age:</span> 20 years old</p>
+                    <p><span class="info-label">Civil Status:</span> Single</p>
+                </div>
+                <div>
+                    <p><span class="info-label">Birthplace:</span> Pasig City</p>
+                    <p><span class="info-label">Gender:</span> Male</p>
+                    <p><span class="info-label">Citizenship:</span> Filipino</p>
+                    <p><span class="info-label">Religion:</span> Roman Catholic</p>
+                    <p><span class="info-label">Height:</span> 5'5"</p>
+                </div>
             </div>
-        </section>
+        </div>
 
-        <section class="section">
-            <h2>Educational Background</h2>
-            <div class="education">
-                <p><strong>Senior High School:</strong> Arellano University - Andres Bonifacio Campus (2020-2022)</p>
-                <p><strong>Junior High School:</strong> Tibagan High School (2016-2020)</p>
-                <p><strong>Elementary:</strong> Tibagan Elementary School (2010-2016)</p>
+        <hr>
+
+        <!-- Educational Attainment -->
+        <div class="section">
+            <h2>Educational Attainment</h2>
+            <div class="education-section">
+                <div class="two-columns">
+                    <div>
+                        <p><strong>Elementary</strong></p>
+                        <p>Tibagan Elementary School</p>
+                        <p>7th Ave, East Rembo, Makati City</p>
+                        <p>S.Y. 2010-2016</p>
+                    </div>
+                    <div>
+                        <p><strong>Junior High School</strong></p>
+                        <p>Tibagan High School</p>
+                        <p>7th Ave, East Rembo, Makati City</p>
+                        <p>S.Y. 2016-2020</p>
+                    </div>
+                </div>
+                <p><strong>Senior High School</strong></p>
+                <p>Arellano University - Andres Bonifacio Campus</p>
+                <p>Pag-asa St. Caniogan, Pasig City</p>
+                <p>S.Y. 2020-2022</p>
             </div>
-        </section>
+        </div>
 
-        <section class="section">
+        <hr>
+
+        <!-- Work Experience -->
+        <div class="section">
             <h2>Work Experience</h2>
-            <p><strong>Restaurant Team Member - KFC Comembo (Graveyard Shift)</strong></p>
             <ul>
-                <li>Assisting in food preparation and customer service.</li>
-                <li>Handling transactions and cash register operations.</li>
-                <li>Maintaining cleanliness and food safety standards.</li>
+                <li>
+                    <strong>Restaurant Team Member - KFC Comembo</strong> (Graveyard Shift)<br>
+                    <em>Ongoing</em><br>
+                    Responsibilities:
+                    <ul>
+                        <li>Assisting in food preparation and customer service.</li>
+                        <li>Managing cash register and handling transactions efficiently.</li>
+                        <li>Maintaining cleanliness of work area and ensuring food safety standards are met.</li>
+                    </ul>
+                </li>
             </ul>
-        </section>
+        </div>
 
-        <section class="section">
-            <h2>Strengths & Skills</h2>
-            <div class="skills-grid">
+        <hr>
+
+        <!-- Strengths and Skills -->
+        <div class="strength-skills">
+            <div>
+                <h2>Strengths</h2>
                 <ul>
-                    <li><strong>Strengths:</strong> Leadership, Persistence, Teamwork, Critical Thinking</li>
-                </ul>
-                <ul>
-                    <li><strong>Skills:</strong> Web Design, Animation, Problem Solving, Time Management</li>
+                    <li>Leadership</li>
+                    <li>Persistence</li>
+                    <li>Determination</li>
+                    <li>Critical Thinking</li>
+                    <li>Teamwork</li>
+                    <li>Efficiency</li>
                 </ul>
             </div>
-        </section>
+            <div>
+                <h2>Skills</h2>
+                <ul>
+                    <li>Problem Solving</li>
+                    <li>Time Management</li>
+                    <li>Fast Learner</li>
+                    <li>Web Design</li>
+                    <li>Animation</li>
+                    <li>Communication</li>
+                </ul>
+            </div>
+        </div>
+
     </div>
+
 </body>
 </html>
